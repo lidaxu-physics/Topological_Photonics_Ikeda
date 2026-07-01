@@ -1,6 +1,6 @@
 # Topological Kerr-Comb Solver — Dispersive Ikeda Map
 
-<video src="https://github.com/user-attachments/assets/c9061c49-26f7-4c1f-8235-6f5505263f93" controls muted width="640"></video>
+https://github.com/user-attachments/assets/c9061c49-26f7-4c1f-8235-6f5505263f93
 
 *Slow-time ring movie of a topological dissipative Kerr soliton: the intracavity waveform mapped onto the rounded-square lattice, evolving over round trips. ([download](slowtime_toposoliton.mp4))*
 
