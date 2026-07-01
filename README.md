@@ -1,5 +1,9 @@
 # Topological Kerr-Comb Solver — Dispersive Ikeda Map
 
+<video src="https://github.com/user-attachments/assets/c9061c49-26f7-4c1f-8235-6f5505263f93" controls muted width="640"></video>
+
+*Slow-time ring movie of a topological dissipative Kerr soliton: the intracavity waveform mapped onto the rounded-square lattice, evolving over round trips. ([download](slowtime_toposoliton.mp4))*
+
 This document explains the nonlinear part of the app: how `TMM_app_nonlinear.py`
 generates Kerr frequency combs in a lattice of ring resonators. The solver is a
 **dispersive Ikeda map** driven by the **same z-resolved transfer-matrix propagator**
