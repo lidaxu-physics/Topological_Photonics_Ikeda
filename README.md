@@ -521,4 +521,20 @@ is already in the propagator $R$.
   by a ring cavity system*, Opt. Commun. (1979).
 - T. Herr et al., *Temporal solitons in optical microresonators*, Nat. Photonics (2014).
 
-See `README.md` for the linear TMM theory that this solver builds on.
+See the [linear TMM repository](https://github.com/lidaxu-physics/Topological_Photonics_TMM)
+for the transfer-matrix theory that this solver builds on.
+
+---
+
+## License
+
+Released under the **MIT License** — see [`LICENSE`](LICENSE).
+
+## Citation
+
+If you use this software in academic work, please cite both the software and the relevant
+publications. Citation metadata is in [`CITATION.cff`](CITATION.cff); GitHub renders a
+ready-to-copy citation via the **"Cite this repository"** button on the repo sidebar. The
+key experimental references are C. J. Flower *et al.*, *Observation of topological frequency
+combs*, Science **384**, 1356 (2024), and L. Xu *et al.*, *On-chip multi-timescale
+spatiotemporal optical synchronization*, Sci. Adv. **11**, eadw7696 (2025).
