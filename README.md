@@ -538,3 +538,13 @@ ready-to-copy citation via the **"Cite this repository"** button on the repo sid
 key experimental references are C. J. Flower *et al.*, *Observation of topological frequency
 combs*, Science **384**, 1356 (2024), and L. Xu *et al.*, *On-chip multi-timescale
 spatiotemporal optical synchronization*, Sci. Adv. **11**, eadw7696 (2025).
+
+## Disclaimer
+
+Co-developed with Claude. I teach Claude nonlinear optics and topological physics, give
+Claude my crude code and feedback, and Claude ships me beautifully crafted codes. Thank you
+Claude.
+
+<p align="center">
+  <img src="me_and_claude.gif" alt="Me holding hands with Claude" width="480">
+</p>
