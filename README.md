@@ -544,7 +544,3 @@ spatiotemporal optical synchronization*, Sci. Adv. **11**, eadw7696 (2025).
 Co-developed with Claude. I teach Claude nonlinear optics and topological physics, give
 Claude my crude code and feedback, and Claude ships me beautifully crafted codes. Thank you
 Claude.
-
-<p align="center">
-  <img src="me_and_claude.gif" alt="Me holding hands with Claude" width="480">
-</p>
