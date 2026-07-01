@@ -1,4 +1,4 @@
-# Nonlinear Kerr-Comb Solver — Theory and Implementation
+# Topological Kerr-Comb Solver — Dispersive Ikeda Map
 
 This document explains the nonlinear part of the app: how `TMM_app_nonlinear.py`
 generates Kerr frequency combs in a lattice of ring resonators. The solver is a
@@ -11,6 +11,52 @@ detuning to expose the temporal dynamics (stationary soliton, breather, or chaos
 whole run can be saved and reloaded (Section 17).
 
 The sweep lives in `lattice_kerr_sweep`; the slow-time evolution in `slow_time_evolve`.
+
+## Files
+
+- **`TMM_app_nonlinear.py`** — the interactive PyQt5 application. Everything lives here:
+  the dispersive-Ikeda Kerr-comb solver for IQH + AQH ring lattices (`lattice_kerr_sweep`),
+  the pump-detuning sweep, the slow-time analysis and rounded-square ring movie
+  (`slow_time_evolve`), save/load of a whole run, and MP4/GIF export. It is self-contained
+  — it carries its own copy of the linear TMM machinery, so no other file is needed.
+- `nonlinear_run.npz` — an example saved run (load it from the **Load** button in the
+  nonlinear window to reproduce the sweep, comb spectra, and slow-time map).
+- `slowtime_*.mp4` — example slow-time ring-movie exports.
+- `README.md` — this file: quick start plus the full theory (below).
+
+## Requirements
+
+```
+numpy
+matplotlib
+scipy
+PyQt5
+```
+
+```bash
+pip install numpy matplotlib scipy PyQt5
+```
+
+`ffmpeg` is optional — only needed for MP4 movie export (GIF export works without it).
+
+## Quick start
+
+```bash
+python TMM_app_nonlinear.py
+```
+
+The app opens on the linear drop spectrum. Pick a lattice (IQH / AQH), set the couplings,
+loss, and lattice size, and **Compute** the cold-cavity band. Then open the **Nonlinear**
+window: set the pump power, Kerr $\gamma$, dispersion $D_2$, and a pump-detuning range
+(drag the yellow region on the spectrum, high → low), and run the sweep to watch the
+comb power vs detuning build up and reveal the soliton step. Click a detuning and run the
+**slow-time analysis** to see the intracavity waveform breathe / drift / lock on the ring
+lattice over round trips. At $\gamma = 0$ the solver reduces exactly to the linear TMM.
+
+---
+
+# Theory and Implementation
+
 
 ### Notation
 
